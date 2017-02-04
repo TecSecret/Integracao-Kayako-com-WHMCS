@@ -9,12 +9,12 @@
 				<td class="ticketlistheaderrow" align="left" valign="middle" width="150">{$LANG.integrakayakoticketid}</td>
 				<td class="ticketlistheaderrow" align="center" valign="middle" width="">
 					<a href="{$_listTicketURL}?sortby=lastactivity&order={$_sortOrderFlip}&page={$_pageOffset}" onclick="javascript:CheckForResolved(this)">
-						Last Update &nbsp;{if $_sortBy == 'LastActivity'}{if $_sortOrder == 'ASC'}<img src="{$_imageURL}/sortasc.gif" border="0"/>{elseif $_sortOrder == 'DESC'}
+						{$LANG.integrakayakolstupd} &nbsp;{if $_sortBy == 'LastActivity'}{if $_sortOrder == 'ASC'}<img src="{$_imageURL}/sortasc.gif" border="0"/>{elseif $_sortOrder == 'DESC'}
 						<img src="{$_imageURL}/sortdesc.gif" border="0"/>{/if}{/if}
 					</a>
 				</td>
 				<td class="ticketlistheaderrow" align="center" valign="middle" width="">
-					<a href="{$_listTicketURL}?sortby=lastreplier&order={$_sortOrderFlip}&page={$_pageOffset}" onclick="javascript:CheckForResolved(this)">{$LANG.integrakayakoticketid}</a>
+					<a href="{$_listTicketURL}?sortby=lastreplier&order={$_sortOrderFlip}&page={$_pageOffset}" onclick="javascript:CheckForResolved(this)">{$LANG.integrakayakoultres}</a>
 				</td>
 				<td class="ticketlistheaderrow" align="center" valign="middle" width="">
 					<a href="{$_listTicketURL}?sortby=departmenttitle&order={$_sortOrderFlip}&page={$_pageOffset}" onclick="javascript:CheckForResolved(this)">{$LANG.integrakayakodepartment}</a>

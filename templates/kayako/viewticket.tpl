@@ -11,7 +11,7 @@
 		{/if}
 		<div class="headerbuttongreen" onclick="javascript: $('#postreplycontainer').show(); $('#replycontents').focus();">{$LANG.integrakayakopostreply}</div>
 	</div>
-	View Ticket: #{$_ticketContainer.displayticketid}</div>
+	{$LANG.integrakayakovticket} #{$_ticketContainer.displayticketid}</div>
 <div class="boxcontainercontenttight">
 
 <form name="ticketpropertiesform" id="ticketpropertiesform" method="post" action="{$_submitURL}?action=update&ticketid={$_ticketContainer.ticketid}" enctype="multipart/form-data">

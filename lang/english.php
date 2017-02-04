@@ -24,8 +24,14 @@ if (!defined("WHMCS")) die("This file cannot be accessed directly");
 $_LANG['locale'] = "en_GB";
 
 /* Translation kayako integration by TecSecret */
+$_LANG['integrakayakoPosby'] = "Posted by";
+$_LANG['integrakayakoon'] = "on";
+$_LANG['integrakayakovticket'] = "View Ticket:";
+$_LANG['integrakayakopostreply'] = "Reply";
+$_LANG['integrakayakolstupd'] = "Last Update";
 $_LANG['integrakayakonopermission'] = "We are sorry, but you have no permission to view this ticket.";
 $_LANG['integrakayakoticketid'] = "Ticket ID";
+$_LANG['integrakayakoultres'] = "Last to Reply";
 $_LANG['integrakayakolastreplier'] = "Last Replier";
 $_LANG['integrakayakodepartment'] = "Departamento";
 $_LANG['integrakayakotype'] = "Type";

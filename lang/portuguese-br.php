@@ -25,8 +25,14 @@ $_LANG['locale'] = "pt_BR";
 
 
 /* Add support integração kayako */
+$_LANG['integrakayakoPosby'] = "Postado por";
+$_LANG['integrakayakoon'] = "on";
+$_LANG['integrakayakovticket'] = "Ver Ticket:";
+$_LANG['integrakayakopostreply'] = "Responder";
+$_LANG['integrakayakolstupd'] = "Última Atualização";
 $_LANG['integrakayakonopermission'] = "Lamentamos, mas você não tem permissão para ver este Ticket.";
 $_LANG['integrakayakoticketid'] = "Ticket ID";
+$_LANG['integrakayakoultres'] = "Último a Responder";
 $_LANG['integrakayakolastreplier'] = "Última Replica";
 $_LANG['integrakayakodepartment'] = "Departamento";
 $_LANG['integrakayakotype'] = "Tipo";
@@ -67,7 +73,7 @@ $_LANG['integrakayakomessagedetails'] = "Detalhes da Mensagem";
 $_LANG['integrakayakosubject'] = "Assunto";
 $_LANG['integrakayakoaddfile'] = "Adicionar Arquivo";
 $_LANG['integrakayakouploadfile'] = "Enviar Arquivo(s)";
-$_LANG['integrakayakoupdate'] = "Atulizar";
+$_LANG['integrakayakoupdate'] = "Atualizar";
 $_LANG['integrakayakocreated'] = "Criado:";
 $_LANG['integrakayakoupdated'] = "Atualizado:";
 $_LANG['integrakayakodepartament'] = "DEPARTAMENTO";
