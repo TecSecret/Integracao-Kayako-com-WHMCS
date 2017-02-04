@@ -11,6 +11,7 @@ Funções
 * Fornece a lista de todos os tickets criados pelo usuário.
 * O usuário pode atualizar o status do ticket e sua prioridade.
 * O usuário pode acompanhar os seus tickets via 'Responder'.
+* Função responder e fechar ticket disponível pelo whmcs.
 * Triagem de campo é fornecido para classificar os dados conforme a exigência.
 * Integrado com 'Kayako Knowledgebase' para ajudar o usuário a encontrar respostas para suas consultas.
 * Os usuários podem enviar seus respectivos comentários para artigos da base de conhecimento.
