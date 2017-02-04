@@ -1,43 +1,43 @@
-Kayako WHMCS Integration
+Integração do Kayako para o WHMCS
 =======================
 
-This library is maintained by Kayako.
+Trata-se de um módulo para integrar o Kayako com o WHMCS e proporcionar unificação para o atendimento.
 
-Overview
+
+Funções
 =======================
+* Integre a conta de usuário do WHMCS com o Kayako.
+* O usuário pode abrir um novo ticket com qualquer prioridade (Baixa, Média, Alta, Crítica, Emergência).
+* Fornece a lista de todos os tickets criados pelo usuário.
+* O usuário pode atualizar o status do ticket e sua prioridade.
+* O usuário pode acompanhar os seus tickets via 'Responder'.
+* Triagem de campo é fornecido para classificar os dados conforme a exigência.
+* Integrado com 'Kayako Knowledgebase' para ajudar o usuário a encontrar respostas para suas consultas.
+* Os usuários podem enviar seus respectivos comentários para artigos da base de conhecimento.
+* Kayako custom field é suportado.
 
-Kayako module WHMCS integration for Kayako version 4.
-
-It provides us a module that can be integrated with WHMCS to facilitate users in ticket creation, view ticket and update the created ticket at WHMCS interface.
-
-Users can also find answers for your queries within Knowledgebase, which is provided within integrated module of Kayako for WHMCS.
-
-Features
+Requisitos
 =======================
-* Integrate WHMCS user account with Kayako Helpdesk.
-* User can open a new ticket with any priority (Low, Medium, High, Critical, Emergency).
-* Provides list of all tickets created by user.
-* User can update the ticket status and priority.
-* User can follow up with his/her tickets via ‘Post Reply’.
-* Field sorting is provided to sort data as per requirement.
-* Integrated with ‘Kayako Knowledgebase’ to help user in finding answers for their queries.
-* Users can submit their respective feedback for knowledgebase articles.
-* Kayako custom field support is provided.
+* Kayako: 4.64 ou superior
+* WHMCS: 5.6.0 ou superior
 
-Supported versions
+Instalação
 =======================
-* Kayako: 4.64 and above
-* WHMCS: 5.1.2 and above
+1. Realizar o download do repositório e descompactar
+2. Apagar a pasta 'modules/support/kayako/' que se encontra aonde o Whmcs foi instalado
+3. Apagar a pasta 'templates/kayako/' que se encontra aonde o Whmcs foi instalado
+4. Apagar o arquivo 'hooks.php' /includes/hooks' caso exista
+5. Gerar os detalhes da API em 'admindokayako > Rest API > API Information'. Abir o arquivo 'pastawhmcs/modules/support/kayako/config.php e altere as respectivas linhas
+ - define('WHMCS_URL', 'http://URL do seu whmcs/');   
+ - define('API_URL', 'http://url do kayako/api/index.php?');
+ - define('API_KEY', 'API key apresentada no admin do kayako');
+ - define('SECRET_KEY', 'Secret key apresentada no admin do Kayako');
+6. Acessar a área admin do WHMCS
+7. Vá em Setup > Configurações Gerais
+8. Clique na Tab Suporte e altera para 'Kayako'
+9. Se você integrou corretamente a sua base de conhecimento do kayako será apresentada no Whmcs quando acessar a área do cliente.
 
-Installation Steps
-=======================
-1. Download and extract the Kayako-WHMCS integration
-2. Copy 'modules/support/kayako/' folder from 'src/modules' and paste under 'modules/support/kayako/' directory of installed_WHMCS
-3. Copy 'templates/kayako/' folder from 'src/templates' and paste under 'templates' directory of installed_WHMCS
-4. Copy 'hooks.php' from 'includes/hooks/' folder and paste it in 'installed_WHMCS/includes/hooks' folder. (if 'hooks.php' already exists, then please add this code in respective file at the end)
-5. Copy API Details from your Helpdesk installation > Rest API > API Information. Now open installed_WHMCS/modules/support/kayako/config.php and make respective changes for your API details
-6. Modify date format in Installed_WHMCS/modules/support/kayako/API/kyConfig.php as per the date format you specified in installed_WHMCS/modules/support/kayako/config.php
-7. Go to Admin area of WHMCS installation
-8. Go to Setup > General Settings
-9. Click on Support tab and select 'Kayako' from dropdown of 'Support Module'
-10. Now you are ready to use 'WHMCS integration with Kayako'
+Créditos e Códigos
+===================
+O código original foi extraído do repositório: https://github.com/kayako/whmcs-integration
+
