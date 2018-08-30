@@ -3,6 +3,9 @@ Integração do Kayako para o WHMCS
 
 Trata-se de um módulo para integrar o Kayako com o WHMCS e proporcionar unificação para o atendimento.
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+**Este projeto foi descontinuado em 01/06/2018. A partir desta data o mesmo não sofrerá mais atualizações por parte da TecSecret.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Funções
 =======================
